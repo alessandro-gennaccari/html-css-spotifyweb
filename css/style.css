@@ -169,6 +169,19 @@ main a {
     font-size: 14px;
 }
 
+.playlist .make-playlist:hover a:before {
+    background-color: white;
+}
+
+.playlist ul li a:hover {
+    color: white;
+}
+
+.playlist .make-playlist:hover a {
+    color: white;
+}
+
+
 /* bot-nav */
 .bot-nav {
     padding: 0 20px;
@@ -205,6 +218,17 @@ main a {
     color: #ffffff99;
     font-weight: normal;
     font-size: 12px;
+}
+
+.bot-nav .install:hover span {
+    color: white;
+}
+
+.bot-nav .install:hover {
+    cursor: pointer;
+}
+.bot-nav .user:hover {
+    cursor: pointer;
 }
 
 .bot-nav .user span {
