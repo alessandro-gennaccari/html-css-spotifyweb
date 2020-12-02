@@ -7,7 +7,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    font-weight: bolder;
 }
+
+ul {
+    list-style: none;
+}
+
 
 /* RIUTILIZZABILI */
 .d-flex {
@@ -72,6 +78,10 @@ main {
     height: calc(100% - 90px);
 }
 
+main a {
+    text-decoration: none;
+    color: #ffffff99;
+}
 
 /* main-nav */
 .main-nav {
@@ -88,10 +98,7 @@ main {
 nav .top-nav img {
     height: 30px;
     vertical-align: middle;
-}
-
-nav .top-nav ul {
-    list-style: none;
+    margin-right: 3px;
 }
 
 nav .top-nav ul li {
@@ -99,11 +106,6 @@ nav .top-nav ul li {
     border-left: 2px solid rgba(0, 0, 0, 0);
     color: a3a3a3;
     margin-bottom: 8px;
-}
-
-nav .top-nav ul li a {
-    text-decoration: none;
-    color: #ffffff99;
 }
 
 nav .top-nav ul li.selected {
@@ -117,6 +119,39 @@ nav .top-nav ul li.selected a {
 nav .top-nav ul li a:hover {
     color: white;
 }
+
+/* playlist */
+nav .playlist h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+nav .playlist .make-playlist {
+    margin-bottom: 20px;
+}
+
+
+nav .playlist .make-playlist a:before {
+    content: '+';
+    display: inline-block;
+    background-color: #ffffff99;
+    color: black;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 30px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+nav .playlist ul li {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
 
 
 
