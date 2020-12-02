@@ -28,6 +28,11 @@ body {
     margin-right: 20px;
 }
 
+/* padding */
+.p-20 {
+    padding: 20px;
+}
+
 /* HEADER */
 header .cta-plan-upgrade {
     position: fixed;
@@ -45,6 +50,7 @@ header .cta-plan-upgrade {
 a.btn {
     display: inline-block;
 }
+
 a.btn:hover {
     transform: scale(1.1);
 }
@@ -62,9 +68,16 @@ main {
     height: calc(100% - 90px);
 }
 
+
+/* main-nav */
 .main-nav {
     width: 250px;
     background-color: #000000;
+}
+
+/* logo */
+.logo img {
+    width: 80%;
 }
 
 .content {
