@@ -126,9 +126,11 @@ main a {
 
 /* playlist */
 .playlist {
+    min-height: 250px;
     flex-grow: 2;
     overflow-y: auto;
 }
+
 .playlist h2 {
     color: white;
     text-transform: uppercase;
@@ -206,9 +208,6 @@ main a {
 
 
 
-
-
-
 .content {
     width: calc(100% - 250px);
     background-color: #141922;
@@ -218,11 +217,7 @@ main a {
 
 
 
-
-
-
-
-
+/* FOOTER */
 footer {
     position: fixed;
     bottom: 0;
