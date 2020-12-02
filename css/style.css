@@ -24,6 +24,10 @@ ul {
     flex-direction: column;
 }
 
+.j-content-space-between{
+    justify-content: space-between;
+}
+
 .btn {
     text-transform: uppercase;
     text-decoration: none;
@@ -48,7 +52,7 @@ header .cta-plan-upgrade {
     position: fixed;
     top: 0;
     right: 0px;
-    z-index: 1;
+    z-index: 2;
     width: calc(100% - 250px);
     height: 90px;
     padding: 25px;
@@ -95,45 +99,47 @@ main a {
 }
 
 /* menu */
-nav .top-nav img {
+.top-nav ul img {
     height: 30px;
     vertical-align: middle;
     margin-right: 3px;
 }
 
-nav .top-nav ul li {
+.top-nav ul li {
     padding-left: 20px;
     border-left: 2px solid rgba(0, 0, 0, 0);
     color: a3a3a3;
     margin-bottom: 8px;
 }
 
-nav .top-nav ul li.selected {
+.top-nav ul li.selected {
     border-left: 2px solid #adff2f;
 }
 
-nav .top-nav ul li.selected a {
+.top-nav ul li.selected a {
     color: white;
 }
 
-nav .top-nav ul li a:hover {
+.top-nav ul li a:hover {
     color: white;
 }
 
 /* playlist */
-nav .playlist h2 {
+.playlist {
+    flex-grow: 2;
+}
+.playlist h2 {
     color: white;
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-nav .playlist .make-playlist {
+.playlist .make-playlist {
     margin-bottom: 20px;
 }
 
-
-nav .playlist .make-playlist a:before {
+.playlist .make-playlist a:before {
     content: '+';
     display: inline-block;
     background-color: #ffffff99;
@@ -147,10 +153,57 @@ nav .playlist .make-playlist a:before {
     vertical-align: middle;
 }
 
-nav .playlist ul li {
+.playlist ul {
+    overflow: auto;
+}
+
+.playlist ul li {
     margin-bottom: 20px;
     font-size: 14px;
 }
+
+/* bot-nav */
+.bot-nav {
+    padding: 0 20px;
+}
+
+.bot-nav .install {
+    border-bottom: 1px solid #808080;
+    padding-bottom: 10px;
+
+}
+
+.bot-nav .user {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.bot-nav .install img {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.bot-nav .user img {
+    height: 25px;
+    width: 25px;
+    background-color: #808080;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.bot-nav .install span {
+    color: #ffffff99;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.bot-nav .user span {
+    color: white;
+}
+
 
 
 
