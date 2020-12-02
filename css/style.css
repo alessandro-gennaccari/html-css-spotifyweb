@@ -192,7 +192,6 @@ main a {
     vertical-align: middle;
 }
 
-
 .bot-nav .install span {
     color: #ffffff99;
     font-weight: normal;
@@ -203,18 +202,12 @@ main a {
     color: white;
 }
 
-
-
-
-
+/* content */
 .content {
     width: calc(100% - 250px);
     background-color: #141922;
     overflow-y: scroll;
 }
-
-
-
 
 /* FOOTER */
 footer {
@@ -234,6 +227,7 @@ footer {
     height: 100%;
 }
 
+/* Player song */
 .player-song {
     width: 250px;
     padding: 10px;
@@ -252,8 +246,9 @@ footer {
 
 .player-song .artist {
     color: white;
-    width: 45%;
+    width: 55%;
     font-size: 8px;
+    padding-left: 3px;
 }
 
 .player-song .artist p {
@@ -262,16 +257,87 @@ footer {
 
 .player-song .like a {
     color: #ffffff99;
-    padding: 2px;
 }
 
+.player-song .like a:hover {
+    color: white;
+}
+
+/* Player controls */
 .player-controls {
     height: 100%;
-    width: 50%;
-
-    background-color: lightgrey;
+    width: 40%;
 }
 
+.player-controls .player-buttons {
+    width: 100%;
+    height: 60%;
+}
+.player-controls .player-buttons ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-controls .player-buttons ul li i {
+    margin: 0 18px;
+    font-size: 17px;
+    color: #bababa;
+}
+
+.player-controls .player-buttons ul li i:hover {
+    color: #adff2f;
+}
+
+.player-controls .player-buttons ul li:hover {
+    cursor: pointer;
+}
+
+.player-controls .player-buttons ul li.play-button i {
+    font-size: 35px;
+    margin: 0 22px;
+}
+
+.player-controls .time-bar {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #bababa;
+}
+
+.player-controls .time-bar .current-time-bar {
+    height: 4px;
+    background-color: #535353;
+    width: 75%;
+    border-radius: 5px;
+}
+
+.player-controls .time-bar .current-time-bar .load-bar {
+    position: relative;
+    height: 100%;
+    width: 10%;
+    background-color: #bababa;
+    border-radius: 5px;
+}
+
+.player-controls .time-bar .current-time-bar:hover {
+    cursor: pointer;
+}
+
+.player-controls .time-bar .current-time-bar:hover .load-bar {
+    background-color: #adff2f;
+}
+
+.player-controls .time-bar .current-time-bar:hover .load-bar .circle {
+    display: block;
+}
+
+
+
+/* Player mix */
 .player-mix {
     height: 100%;
     width: 250px;
@@ -287,17 +353,18 @@ footer {
 }
 
 .player-mix ul li.volume {
-    width: 70%;
+    width: 65%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .player-mix ul li .volume-bar{
     height: 4px;
     background-color: #535353;
-    width: 80%;
+    width: 75%;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
 .player-mix ul li .volume-bar .load-bar{
@@ -306,18 +373,6 @@ footer {
     width: 20%;
     background-color: #bababa;
     border-radius: 5px;
-}
-
-.player-mix ul li .volume-bar:hover {
-    cursor: pointer;
-}
-
-.player-mix ul li .volume-bar:hover .load-bar {
-    background-color: #adff2f;
-}
-
-.player-mix ul li .volume-bar:hover .load-bar .circle {
-    display: block;
 }
 
 .circle {
@@ -332,5 +387,18 @@ footer {
     border-radius: 50%;
     background-color: #bababa;
 }
+
+.player-mix ul li .volume-bar:hover {
+    cursor: pointer;
+}
+
+.player-mix ul li .volume-bar:hover .load-bar {
+    background-color: #adff2f;
+}
+
+.player-mix ul li .volume-bar:hover .load-bar .circle {
+    display: block;
+}
+
 
 
