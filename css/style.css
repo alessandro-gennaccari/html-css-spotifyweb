@@ -97,9 +97,18 @@ main a {
     width: 80%;
 }
 
+.logo-small {
+    display: none;
+}
+
+.logo-small img {
+    width: 30px;
+}
+
+
 /* menu */
 .top-nav ul img {
-    height: 30px;
+    width: 30px;
     vertical-align: middle;
     margin-right: 3px;
 }
@@ -281,8 +290,8 @@ footer {
 }
 
 .player-controls .player-buttons ul li i {
-    margin: 0 18px;
-    font-size: 17px;
+    margin: 10px;
+    font-size: 15px;
     color: #bababa;
 }
 
@@ -295,8 +304,8 @@ footer {
 }
 
 .player-controls .player-buttons ul li.play-button i {
-    font-size: 35px;
-    margin: 0 22px;
+    font-size: 30px;
+    margin: 0 20px;
 }
 
 .player-controls .time-bar {
@@ -362,7 +371,7 @@ footer {
 .player-mix ul li .volume-bar{
     height: 4px;
     background-color: #535353;
-    width: 75%;
+    width: 70%;
     border-radius: 5px;
     margin-right: 10px;
 }
@@ -400,5 +409,48 @@ footer {
     display: block;
 }
 
+/* Media query */
+@media screen and (max-width: 576px) {
 
+    header .cta-plan-upgrade{
+        width: calc(100% - 50px);
+    }
 
+    .main-nav {
+        width: 50px;
+        text-align: center;
+    }
+
+    .main-nav .top-nav ul li {
+        padding: 0;
+    }
+
+    .main-nav .top-nav .logo-small {
+        padding: 20px 0;
+    }
+
+    .main-nav .bot-nav {
+        padding: 0 12px
+    } 
+
+    .content {
+        width: calc(100% - 50px);
+    }
+
+    .main-nav .top-nav .logo,
+    .main-nav .top-nav ul li span,
+    .main-nav .playlist,
+    .main-nav .bot-nav span {
+        display: none;
+    }
+
+    .main-nav .top-nav ul li,
+    .main-nav .bot-nav .install {
+        border: none;
+    }
+
+    .main-nav .top-nav .logo-small {
+        display: block;
+    }
+
+}
