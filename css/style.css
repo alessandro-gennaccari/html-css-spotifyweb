@@ -127,6 +127,7 @@ main a {
 /* playlist */
 .playlist {
     flex-grow: 2;
+    overflow-y: auto;
 }
 .playlist h2 {
     color: white;
@@ -153,10 +154,6 @@ main a {
     vertical-align: middle;
 }
 
-.playlist ul {
-    overflow: auto;
-}
-
 .playlist ul li {
     margin-bottom: 20px;
     font-size: 14px;
@@ -165,6 +162,7 @@ main a {
 /* bot-nav */
 .bot-nav {
     padding: 0 20px;
+    background-color: black;
 }
 
 .bot-nav .install {
