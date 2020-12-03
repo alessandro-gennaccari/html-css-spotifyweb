@@ -27,6 +27,10 @@ ul {
     justify-content: space-between;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .btn {
     text-transform: uppercase;
     text-decoration: none;
@@ -39,6 +43,10 @@ ul {
 /* margin */
 .mr-20 {
     margin-right: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
 }
 
 /* padding */
@@ -275,23 +283,32 @@ ul.my-playlist li a:hover {
     background-color: #adff2f;
 }
 
-/* Recently played */
-.recently-played {
+/* Recently played - for-you*/
+.recently-played,
+.for-you {
     color: white;
     font-size: 17px;
 }
 
-.recently-played ul.cover-list {
+.recently-played ul.cover-list,
+.for-you ul.cover-list {
     display: flex;
 }
 
 .cover-item {
-    margin: 30px 15px 20px 0;
+    margin: 30px 0px 20px;
     width: calc(100% / 6);
+}
+
+.cover-item.mr-20 {
+    margin-right: 20px;
+}
+
+.preview {
     position: relative;
 }
 
-.cover-item img {
+.cover-item .preview img {
     width: 100%;
 }
 
@@ -314,11 +331,23 @@ ul.my-playlist li a:hover {
     transform: translate(-50%, -50%);
 }
 
-
-.cover-item:hover .layover{
+.preview:hover .layover{
     display: block;
     cursor: pointer;
 }
+
+.cover-item .text-center h3 {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.cover-item .text-center p,
+.for-you p {
+    color: #ffffff66;
+    font-size: 13px;
+    font-weight: initial;
+}
+
 
 
 
