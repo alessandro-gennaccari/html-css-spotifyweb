@@ -679,4 +679,23 @@ footer a:hover,
         width: 60%;
     }
 
+    .player-controls .player-buttons ul li.play-button i {
+        font-size: 28px;
+        margin: 0 10px;
+    }
+
+    .player-mix ul li .volume-bar{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-height: 350px) {
+    .bot-nav {
+        display: none;
+    }
+
+    header .cta-plan-upgrade {
+        display: none;
+    }
 }
