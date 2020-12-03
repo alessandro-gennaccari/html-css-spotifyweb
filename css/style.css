@@ -248,6 +248,7 @@ ul.my-playlist li a:hover {
     margin-top: 90px;
 }
 
+/* Nav-content */
 .content .nav-content ul {
     display: flex;
     justify-content: center;
@@ -274,6 +275,50 @@ ul.my-playlist li a:hover {
     background-color: #adff2f;
 }
 
+/* Recently played */
+.recently-played {
+    color: white;
+    font-size: 17px;
+}
+
+.recently-played ul.cover-list {
+    display: flex;
+}
+
+.cover-item {
+    margin: 30px 15px 20px 0;
+    width: calc(100% / 6);
+    position: relative;
+}
+
+.cover-item img {
+    width: 100%;
+}
+
+.layover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.layover i {
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.cover-item:hover .layover{
+    display: block;
+    cursor: pointer;
+}
 
 
 
