@@ -270,7 +270,7 @@ ul.my-playlist li a:hover {
     padding: 0 15px 6px;
     text-transform: uppercase;
     color: #ffffff99;
-    font-size: 14px;
+    font-size: 12px;
     position: relative;
 }
 
@@ -431,6 +431,7 @@ footer a {
     width: 60%;
     font-size: 8px;
     padding-left: 10px;
+    margin-left: 5px;
 }
 
 .player-song .artist p {
@@ -592,6 +593,36 @@ footer a:hover,
 }
 
 /* Media query */
+@media screen and (max-width: 992px) {
+    .content .nav-content ul {
+        flex-wrap: wrap;
+    }
+
+    .content .nav-content ul li {
+        padding-top: 25px;
+    }
+
+    .cover-item {
+        width: calc(100% / 4 - 20px);
+    }
+
+    .recently-played ul.cover-list,
+    .for-you ul.cover-list,
+    .popular-artist ul.cover-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover-item {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .player-song .like a {
+        margin-right: 10px;
+    }
+} 
+
 @media screen and (max-width: 576px) {
 
     header .cta-plan-upgrade{
@@ -642,24 +673,6 @@ footer a:hover,
 
     .main-nav .top-nav .logo-small {
         display: block;
-    }
-
-    .content .nav-content ul {
-        flex-wrap: wrap;
-    }
-
-    .content .nav-content ul li {
-        padding-bottom: 30px;
-    }
-
-    .cover-item {
-        width: calc(100% / 2 - 20px);
-    }
-
-    .recently-played ul.cover-list,
-    .for-you ul.cover-list,
-    .popular-artist ul.cover-list {
-        flex-wrap: wrap;
     }
 
     .player-controls .time-bar .current-time-bar {
