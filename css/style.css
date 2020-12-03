@@ -134,9 +134,7 @@ main a {
 
 /* playlist */
 .playlist {
-    min-height: 250px;
-    flex-grow: 2;
-    overflow-y: auto;
+    padding: 20px 20px 0;
 }
 
 .playlist h2 {
@@ -164,24 +162,31 @@ main a {
     vertical-align: middle;
 }
 
-.playlist ul li {
-    margin-bottom: 20px;
-    font-size: 14px;
-}
 
 .playlist .make-playlist:hover a:before {
     background-color: white;
 }
 
-.playlist ul li a:hover {
-    color: white;
-}
 
 .playlist .make-playlist:hover a {
     color: white;
 }
 
+ul.my-playlist {
+    overflow-y: auto;
+    padding: 0 20px;
+    flex-grow: 2;
+    min-height: 150px;
+}
 
+ul.my-playlist li {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+ul.my-playlist li a:hover {
+    color: white;
+}
 /* bot-nav */
 .bot-nav {
     padding: 0 20px;
@@ -286,6 +291,10 @@ footer {
 
 .player-song .artist p {
     color: #ffffff99;
+}
+
+.player-song .like {
+    width: 25%;
 }
 
 .player-song .like a {
@@ -403,7 +412,7 @@ footer {
 .player-mix ul li .volume-bar .load-bar{
     position: relative;
     height: 100%;
-    width: 20%;
+    width: 40%;
     background-color: #bababa;
     border-radius: 5px;
 }
@@ -454,8 +463,16 @@ footer {
     }
 
     .main-nav .bot-nav {
-        padding: 0 12px
+        padding: 0;
+    }
+
+    .main-nav .bot-nav .install {
+        margin: 0;
     } 
+
+    .main-nav .bot-nav img {
+        margin: 0;
+    }
 
     .content {
         width: calc(100% - 50px);
@@ -464,6 +481,7 @@ footer {
     .main-nav .top-nav .logo,
     .main-nav .top-nav ul li span,
     .main-nav .playlist,
+    ul.my-playlist,
     .main-nav .bot-nav span {
         display: none;
     }
