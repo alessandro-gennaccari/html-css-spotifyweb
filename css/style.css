@@ -690,11 +690,27 @@ footer a:hover,
 
 }
 
+@media screen and (max-width: 576px) {
+    .player-mix ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .player-mix ul li.volume {
+        flex-direction: column;
+        align-items: center;
+    }
+    .player-mix ul li.volume i {
+        margin-bottom: 5px;
+    }
+    .player-mix ul li .volume-bar {
+        margin: 0;
+    }
+}
+
 @media screen and (max-height: 350px) {
     .bot-nav {
         display: none;
     }
-
     header .cta-plan-upgrade {
         display: none;
     }
