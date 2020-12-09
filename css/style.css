@@ -318,6 +318,7 @@ ul.my-playlist li a:hover {
 
 .preview {
     position: relative;
+    display: flex;
 }
 
 .cover-item .preview img {
@@ -328,8 +329,8 @@ ul.my-playlist li a:hover {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.3);
     display: none;
 }
@@ -419,7 +420,7 @@ footer a {
 }
 
 .player-song .album {
-    width: 20%;
+    width: 30%;
 }
 
 .player-song img {
